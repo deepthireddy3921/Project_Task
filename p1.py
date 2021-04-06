@@ -1,1 +1,4 @@
-find even nos between (1,10)
+count=0
+for i in range(1,10):
+  count++;
+print(count)
