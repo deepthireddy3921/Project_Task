@@ -1,0 +1,49 @@
+1...
+
+
+co=0
+while(co<10):
+    s=input("Enter the state")
+    c=input("Enter the capital")
+    dc1={'ap':'amaravati','madhyapradesh':'bhopal','tamilnadu':'chennai'}
+    if(s in dc1.keys() and c in dc1[s]):
+        print("Yes")
+        co=co+1
+    else:
+        print("no")
+        co=co+1
+    print(co)
+2.....
+
+dc={'Admin123':'astronaut','Dora':'are@123'}
+a=int(input("1.Insert\n2.Delete\n3.Update\nEnter ur choice"))
+if(a==1):
+    k=input("Enter the username to insert")
+    v=input("Enter the password to insert")
+    dc[k]=v
+    print(dc)
+elif(a==2):
+    k=input("Enter the username to delete")
+    v=input("Enter the password ")
+    if(k in dc.keys() and v in dc[k]):
+        dc.pop(k)
+        print(dc)
+    else:
+        print("Username or password mismatch")
+elif(a==3):
+    k=input("Enter the username to be update")
+    v=input("Enter the password to update")
+    dc.update({k:v})
+    print(dc)
+else:
+    print("Invalid input") 
+4....
+
+dc={'Ram':'123456789','Rakesh':'987654321','Sagar':'123456987','Ramu':'456789123'}
+dc1={}
+for x,y in dc.items():
+    dc1[y]=x
+print(dc)
+print(dc1)
+3....
+
